@@ -7,10 +7,16 @@
 
 body{
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 header{
  box-shadow: 0 2px 5px rgba(0,0,0,01) ;
+ margin: 0;
+background: rgba(0, 0, 0, 0.6); /* ajusta 0.4–0.8 */
+backdrop-filter: blur(5px);     /* efecto glass 🔥 */
+width: 100%;
 }
 
 nav{
@@ -21,4 +27,50 @@ nav{
     max-width: 1200px;
     margin: 0 auto;
 }
-.logog
+.logo{
+    font-size: 1.7 rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.navlinks{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #333;
+}
+
+section{
+    display: flex;
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+section img{
+    width: 100px;
+    flex-grow: 1;
+    object-fit: cover;
+    
+    transition: .5s ease;
+}
+
+section img:hover{
+    width: 300px;
+    opacity: 1;
+}
+
+.hero{
+  position: relative;
+    width: 100%;
+    height: calc(100vh - 70px); /* resta altura del menú */
+    
+    background-image: url("imagenes/banner1.jpg");
+    background-size: cover;
+    background-position: center;  
+}
